@@ -150,20 +150,10 @@ class MainActivity : AppCompatActivity() {
     private fun isReadStorageAllowed(): Boolean {
         //Getting the permission status
         // Here the checkSelfPermission is
-        /**
-         * Determine whether <em>you</em> have been granted a particular permission.
-         *
-         * @param permission The name of the permission being checked.
-         *
-         */
+
         val result = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
 
-        /**
-         *
-         * @return {@link android.content.pm.PackageManager#PERMISSION_GRANTED} if you have the
-         * permission, or {@link android.content.pm.PackageManager#PERMISSION_DENIED} if not.
-         *
-         */
+
         //If permission is granted returning true and If permission is not granted returning false
         return result == PackageManager.PERMISSION_GRANTED
     }
